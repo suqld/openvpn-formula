@@ -124,3 +124,9 @@ auth-gen-token{% if config.auth_gen_token is not sameas true %} {{ config.auth_g
 setenv {{ setenv }}
 {% endfor %}
 {% endif %}
+
+{%- if config.ncp_ciphers is defined %}
+ncp-ciphers {{ config.ncp_ciphers }}
+{%- endif %}
+
+
